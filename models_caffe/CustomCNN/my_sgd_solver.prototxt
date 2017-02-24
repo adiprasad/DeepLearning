@@ -1,0 +1,14 @@
+net: "models/CustomCNN/customcnn_train_val.prototxt"
+test_iter: 12
+test_interval: 240
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 400
+display: 1
+max_iter: 1200
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 400
+snapshot_prefix: "models/CustomCNN/results_custCNN/"
+solver_mode: GPU

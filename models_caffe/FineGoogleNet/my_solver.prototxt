@@ -1,0 +1,16 @@
+net: "models/bvlc_googlenet/my_2train_val.prototxt"
+test_iter: 78
+test_interval: 100
+test_initialization: false
+display: 10
+average_loss: 1
+base_lr: 0.001
+lr_policy: "step"
+stepsize: 100
+gamma: 0.96
+max_iter: 1500
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 1000
+snapshot_prefix: "models/bvlc_googlenet/FineGoogleNet"
+solver_mode: GPU
